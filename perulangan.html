@@ -1,0 +1,65 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title></title>
+    </head>
+    <style>
+        body {
+            background-color: rgb(12, 110, 105);
+        }
+    </style>
+    <body>
+        <div id="tes"></div>
+        <script>
+            var tes = document.getElementById("tes");
+            tes.innerText="Down";
+            tes.style.backgroundColor="rgb(145, 142, 9)";
+            tes.style.padding="10px;"
+            tes.style.fontFamily="sans-serif";
+        </script>
+        <script>
+            for(i=0; i < 5; i++){
+            document.write("perulangan ke-" + i + "<br>");
+            }
+        </script>
+        <hr>
+        <script>
+            for(i=0; i<=30; i++){
+                document.write("perulangan ke-" + i + "<br>");
+            }
+        </script>
+        <p class="paragraf">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Quo nihil dolores aliquam beatae dicta non distinctio rem,
+            est culpa tenetur odit maiores earum eius voluptatum consectetur laboriosam iure expedita.
+            Natus.
+        </p>
+        <p class="paragraf">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Quo nihil dolores aliquam beatae dicta non distinctio rem,
+                est culpa tenetur odit maiores earum eius voluptatum consectetur laboriosam iure expedita.
+                Natus.
+            </p>
+            <p class="paragraf">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Quo nihil dolores aliquam beatae dicta non distinctio rem,
+                    est culpa tenetur odit maiores earum eius voluptatum consectetur laboriosam iure expedita.
+                    Natus.
+                </p>
+
+                <script>
+                    setInterval(function() {
+                        var paragraf = document.getElementsByClassName("paragraf");
+                        paragraf[1].style.color="#fff";
+                        paragraf[0].style.backgroundColor="grey";
+
+                    setTimeout(function() {
+                            paragraf[1].style.color="grey";
+                            paragraf[0].style.backgroundColor="#fff";
+                    },500)
+                        },1000);
+                </script>
+    </body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>let dan var</title>
+</head>
+<body>
+
+	<script type="text/javascript">
+		function withVar(){
+			var nilai = 1;
+			if(nilai == 1){
+				var rozi = ++nilai;
+			}
+			return rozi;
+		}
+		function withLet(){
+			let nilai = 1;
+			if(nilai == 1){
+				let rozi = ++nilai;
+			}
+			return rozi;
+		}
+
+		console.log("dengan var hasilnya : "+withVar());
+		console.log("dengan let hasilnya : "+withLet());
+	</script>
+
+</body>
+</html>
