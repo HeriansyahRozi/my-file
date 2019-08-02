@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<p id="tampilan1"></p>
+	<p id="tampilan2"></p>
+	<p id="tampilan3"></p>
+
+	<script type="text/javascript">
+		var fruits = ["Banana", "Orange", "Apple", "Mango"];
+		document.getElementById("tampilan1").innerHTML = "original => "+fruits;
+		fruits.pop();
+		document.getElementById("tampilan2").innerHTML = fruits;
+		fruits.push("kiwi");
+		document.getElementById("tampilan3").innerHTML = fruits;
+	</script>
+
+</body>
+</html>
